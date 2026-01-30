@@ -1,0 +1,60 @@
+/* shared styles */
+.open-sans-text {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+}
+#buttn
+{
+  border: 1px;
+  border-radius: 4px;
+  padding: 16px 12px;
+  transition:color 0.3s ,box-shadow 0.3s ,transform 0.3s;
+}
+#buttn:hover,a:hover
+{
+    background-color: lime;
+    border-radius: 4px;
+    box-shadow: 0 8px 20px rgba(16, 14, 39, 0.35);
+    transform: translateY(-2px);
+}
+a
+{
+    transition:color 0.3s ,box-shadow 0.3s ,transform 0.3s;
+}
+/* special styles */
+.navbar
+{
+    width:100%;
+    max-width:1600px;
+    height:92px;
+    background-color:#FFFFFF;
+    padding:16px 120px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar .logo_section
+{
+    width:139px;
+    height:60px;
+}
+.navbar .nav_links
+{
+    display:flex;
+    width:365px;
+    height:24px;
+    gap: 32px;
+    list-style: none;
+}
+.navbar .nav_links a
+{
+    text-decoration: none;
+    font-size: 16px;
+    color: black;
+    font-weight: 500;
+}
+.navbar button
+{
+    background-color:  #469165;
+    color: #FFFFFF;
+}
