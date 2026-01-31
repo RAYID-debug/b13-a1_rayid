@@ -4,15 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UI Page</title>
-    <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <nav class="navbar">
+<body class="open-sans-text">
+    <header >
+      <nav class="navbar">
         <section class="logo_section">
-             <img src="../assets/logo-navbar.png" alt="Logo">
+             <img src="./assets/logo-navbar.png" alt="Logo">
         </section>
         <section>
             <ul class="nav_links">
@@ -24,6 +25,31 @@
         <button id="buttn">
             Get Early Acess
         </button>
-    </nav>
+      </nav>
+      <section class="banner">
+        <div class="header_content">
+            <div class="headeer_text">
+                <p class="notice">
+                    Early Acess Now open
+                </p>
+                <h1>
+                    Structured thinking,<br><span class="color_green">not just note-taking.</span>
+                </h1>
+                <p>
+                    A private space to store notes, links, and learning summaries — designed to<br> 
+                    help you think clearly, connect ideas, and turn learning into long-term knowledge.
+                </p>
+            </div>
+            <div class="header_buttons">
+                <button id="buttn" class="header_button1">
+                    Start Buiding Your Vault
+                </button>
+                <button id="buttn" class="header_button2">
+                    See How It works
+                </button>
+            </div>
+        </div>
+      </section>
+    </header>
 </body>
 </html>
