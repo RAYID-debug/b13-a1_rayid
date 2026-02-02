@@ -20,6 +20,7 @@ body
   padding: 16px 12px;
   transition:color 0.3s ,box-shadow 0.3s ,transform 0.3s;
   font-size: 18px;
+  cursor:pointer;
 }
 #buttn:hover,a:hover
 {
@@ -35,8 +36,6 @@ a
 /* special styles */
 .navbar
 {
-    width:100%;
-    max-width:1600px;
     background-color:#FFFFFF;
     padding:16px 120px;
     display:flex;
@@ -69,18 +68,21 @@ a
 }
 header .banner
 {
-    width:100%;
-    max-width: 1600px;
     background:url(./assets/hero-bg.png);
+    background-size:cover;
     padding:70px 120px 134px;
     background-repeat: no-repeat;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:40px;
     margin-left: 0px;
     margin-right: 0px;
 }
 .banner .header_content
 {
    width: 100%;
-   max-width: 1360px;
    text-align: center;
    margin: 0 auto;
 }
@@ -131,4 +133,144 @@ padding:12px 16px;
     border: 5px solid #FFFFFF;
     width:198px;
     padding:12px 16px;
+}
+.Features
+{
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    text-align: center;
+    margin-bottom:60px;
+}
+.Features .Features_Heading
+{
+    margin-top: 68px;
+    margin-bottom: 0px;
+    font-size: 48px;
+    font-weight: 700;
+    color:#001931;
+}
+.Features .Features_para
+{
+    font-size: 16px;
+    font-weight: 400;
+    color:#627382;
+}
+.Features .Features_cards
+{
+    margin-top: 44px;
+    display:flex;
+    gap:24px;
+    max-width: 1360px;
+}
+.Features .Features_cards .card
+{
+    width:322px;  
+    border:#FFFFFF solid transparent;
+    box-shadow:0 1px 30px #627382;
+    border-radius:8px;
+    padding:34px;
+}
+.Features .Features_cards .card h3
+{
+    color:#001931;
+    font-size: 24;
+    font-weight: 500;
+    line-height: auto;
+}
+.Features .Features_cards .card p
+{
+    color:#627382;
+    font-size: 16px;
+    line-height: 20px;
+}
+.Features .Features_cards .card img
+{
+    object-fit: contain;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+}
+.Features .Features_cards .card .img_container
+{
+    background-color:#F95555;
+    border-radius: 50%;
+    height:35px;
+    width:35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:20px auto 10px;
+}
+.solutions
+{
+    width:100%;
+    display:flex;
+    gap:60px;
+}
+.solutions .solutions_content
+{
+    display:flex;
+    flex-direction:column;
+    gap:16px;
+    width:600px;
+    height:400px;
+    margin:120px 0px 120px 0px;
+}
+.solutions .solutions_content .solutions_notice
+{
+    font-size: 16px;
+    margin:0;
+}
+.solutions .solutions_content .solutions_heading
+{
+    font-size: 48px;
+    font-weight: 700;
+    margin:0;
+}
+
+.solutions .solutions_img
+{
+    background-image:url(./assets/knowledge.png);
+    background-repeat: no-repeat;
+    width:400px;
+    height:400px;
+    background-size: contain;
+    margin:120px 0 120px 400px;
+}
+.solutions .solutions_content .solutions_text
+{
+    color:#627382;
+}
+.solutions .solutions_content .solutions_text, .solutions .solutions_content .solutions_lists
+{
+    font-size: 16px;
+    line-height:20px ;
+}
+.solutions .solutions_content .solutions_lists .custom_list
+{
+    list-style: none;
+    padding-left: 0px;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+.solutions .solutions_content .solutions_lists .custom_list li
+{
+    position: relative;
+    padding-left: 28px;
+}
+.solutions .solutions_content .solutions_lists .custom_list li::before
+{
+    content: "";
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:20px;
+    height:20px;
+    background-image:url(./assets/CheckCircle.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    font-weight: bold;
 }
